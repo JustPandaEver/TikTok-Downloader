@@ -8,8 +8,8 @@ const util = require('util');
 let counter;
 counter = require('./counter.json').count
 
-app.get('/https://vm.tiktok.com/:id', (req, res) => {
-  let url = 'https://vm.tiktok.com/' + req.params.id;
+app.get('/https://vt.tiktok.com/:id', (req, res) => {
+  let url = 'https://vt.tiktok.com/' + req.params.id;
   if (url <= 2) {
     console.log('Missing or Invalid URL');
     res.json({
